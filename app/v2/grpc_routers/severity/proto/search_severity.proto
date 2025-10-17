@@ -1,0 +1,44 @@
+syntax = "proto3";
+package search_severity;
+
+service SearchSeverity {
+  rpc GetSeverityByFilters (FilterInput) returns (ListResponseSeverity) {}
+  rpc GetSeverityByRanges (ByRangesInput) returns (ListResponseSeverity) {}
+  rpc GetProcesses (ProcessesInput) returns (ProcessesResponse) {}
+}
+
+message FilterInput {
+  repeated string filters = 1;
+}
+
+message ResponseSeverityItem {
+  string filter_name = 1;
+  int32 count = 2;
+  float max_severity = 3;
+}
+
+message ListResponseSeverity {
+  repeated ResponseSeverityItem items = 1;
+}
+
+message ByRangesInput {
+  repeated string filters_list = 1;
+  string ranges_object = 2;
+  int32 tmo_id = 3;
+  string find_by_value = 4;
+}
+
+message ProcessesInput {
+  repeated string filters_list = 1;
+  optional string ranges_object = 2;
+  int32 tmo_id = 3;
+  repeated string sort = 4;
+  string limit = 5;
+  optional string find_by_value = 6;
+  optional bool with_groups = 7;
+}
+
+message ProcessesResponse {
+   repeated string rows = 1;
+   int32 total_count = 2;
+}

@@ -1,0 +1,18 @@
+{
+  "show": ["zeigen", "anzeigen", "zeige"],
+  "in": ["im"],
+  "on": ["an", "auf"],
+  "with": ["mit"],
+  "and": ["und"],
+  "or": ["oder"],
+  "using": ["verwenden", "mithilfe", "mit"],
+  "inventory": ["inventar"],
+  "hierarchy": ["hierarchie"],
+  "details": ["einzelheiten"],
+  "map": ["karte"],
+  "articles": ["der", "einer"],
+  "inventory_action": ["Im Inventar anzeigen"],
+  "details_action": ["Im Detail anzeigen"],
+  "hierarchy_action": [" mit "],
+  "map_action": ["Auf einer Karte anzeigen"]
+}

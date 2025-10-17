@@ -1,0 +1,18 @@
+{
+  "show": ["show"],
+  "in": ["in"],
+  "on": ["on"],
+  "with": ["with"],
+  "and": ["and"],
+  "or": ["or"],
+  "using": ["using"],
+  "inventory": ["inventory"],
+  "hierarchy": ["hierarchy"],
+  "details": ["details"],
+  "map": ["map"],
+  "articles": ["a"],
+  "inventory_action": ["Show in Inventory"],
+  "details_action": ["Show in Details"],
+  "hierarchy_action": [" using "],
+  "map_action": ["Show on a map"]
+}

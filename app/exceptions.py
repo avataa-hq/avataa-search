@@ -1,0 +1,2 @@
+class TMONotFoundError(Exception):
+    pass
